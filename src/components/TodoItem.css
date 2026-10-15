@@ -1,0 +1,61 @@
+.todo-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 52px;
+  padding: 4px 12px;
+  border-bottom: 1px solid var(--border);
+}
+
+.todo-item:last-child {
+  border-bottom: none;
+}
+
+.todo-item__check {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  accent-color: var(--primary);
+}
+
+.todo-item__text {
+  flex: 1;
+  min-width: 0;
+  overflow-wrap: anywhere;
+  cursor: text;
+}
+
+.todo-item--done .todo-item__text {
+  color: var(--muted);
+  text-decoration: line-through;
+}
+
+.todo-item__edit {
+  flex: 1;
+  min-width: 0;
+  min-height: 36px;
+  padding: 0 8px;
+  border: 1px solid var(--primary);
+  border-radius: var(--radius);
+  font-size: 1rem;
+}
+
+.todo-item__btn {
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  border: none;
+  border-radius: var(--radius);
+  background: transparent;
+  color: var(--muted);
+  font-size: 1rem;
+}
+
+.todo-item__btn:hover {
+  background: var(--hover);
+  color: var(--text);
+}
+
+.todo-item__btn--danger:hover {
+  color: var(--danger);
+}

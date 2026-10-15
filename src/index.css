@@ -1,0 +1,38 @@
+:root {
+  --bg: #f5f6f8;
+  --surface: #ffffff;
+  --text: #1f2328;
+  --muted: #6b7280;
+  --border: #e3e5e8;
+  --hover: #f0f1f3;
+  --primary: #2563eb;
+  --danger: #dc2626;
+  --radius: 8px;
+
+  color-scheme: light;
+  font-family: system-ui, 'Segoe UI', Tahoma, sans-serif;
+  line-height: 1.5;
+  color: var(--text);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--bg);
+}
+
+button,
+input {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}

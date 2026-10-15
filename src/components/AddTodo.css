@@ -1,0 +1,37 @@
+.add-todo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.add-todo__input {
+  flex: 1;
+  min-width: 0;
+  min-height: 44px;
+  padding: 0 12px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  font-size: 1rem;
+}
+
+.add-todo__input:focus {
+  outline: 2px solid var(--primary);
+  outline-offset: -1px;
+}
+
+.add-todo__btn {
+  min-height: 44px;
+  padding: 0 16px;
+  border: none;
+  border-radius: var(--radius);
+  background: var(--primary);
+  color: #fff;
+  font-weight: 600;
+}
+
+.add-todo__btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

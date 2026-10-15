@@ -1,0 +1,25 @@
+.tools {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.tools__btn {
+  min-height: 40px;
+  padding: 0 12px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  color: var(--text);
+  font-size: 0.9rem;
+}
+
+.tools__btn:hover:not(:disabled) {
+  background: var(--hover);
+}
+
+.tools__btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
